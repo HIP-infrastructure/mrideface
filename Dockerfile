@@ -20,7 +20,7 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install --no-install-recommends -y \ 
     curl libgomp1 && \
-    curl -O# https://surfer.nmr.mgh.harvard.edu/pub/dist/mri_deface/mri_deface_linux && \
+    curl -sSO https://surfer.nmr.mgh.harvard.edu/pub/dist/mri_deface/mri_deface_linux && \
     mkdir ./install && \
     mv mri_deface_linux ./install/mri_deface && \
     chmod a+x ./install/mri_deface && \
